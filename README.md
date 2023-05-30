@@ -17,6 +17,7 @@ __The synthetic dataset is modeled after the following assumptions.__
     - for each instance of "the Process" we compute ACF and PACF.
 
 __CONCLUSION__
+
 __Important :__  All below statements / observations should be read as "... _in the configurations used_".
 
 1. Using ACF and PACF data to feed MLP shows moderate classification ability.
