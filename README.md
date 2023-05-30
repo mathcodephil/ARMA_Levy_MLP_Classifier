@@ -18,17 +18,6 @@ __The synthetic dataset is modeled after the following assumptions.__
 
 __CONCLUSION__
 
-__Important :__  All below statements / observations should be read as "... _in the configurations used_".
+_In the configurations used_
 
-1. Using ACF and PACF data to feed MLP shows moderate classification ability.
->
-2. Using raw Time Series data to feed MLP shows very poor ability to classify.
-     - ReLU fails almost totally
->
-3. Correlation Functions with MPL Classifier shows __non-uniform__ performance wrt Classes:
-     - classes () are captured well;
-     - classes () are hard to identify.
->
-4. Both ReLU and sigmoid show comparable performance in terms of training time.
-
-__Finally,__ there is evidence to feed MLP Classifier with ACF and PACF data to estimate the orders of ARMA model. There is no reason to build MLP Classifier upon raw Time Series data.
+there is evidence to feed MLP Classifier with ACF and PACF data to estimate the orders of ARMA model. There is no reason to build MLP Classifier upon raw Time Series data.
