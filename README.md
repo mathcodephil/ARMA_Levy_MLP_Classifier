@@ -7,9 +7,9 @@ __The synthetic dataset is modeled after the following assumptions.__
     - 1 <= q <= 3;
     - AR coefficients are > -1 and < 1;
     - MA coefficients are >= 0 and < 1;
-    - the random variables in MA part are taken from a standard Levy distribution with alpha in [0.25, 1, 1.9];
+    - the random variables in MA part are taken from a standard Levy distribution with alpha in [0.25, 1];
     - 80 time points;
-    - for each set __(__ (p,q), AR coefficients, MA coefficients, alpha __)__ we generate several instances of "the Process";
+    - for each set __(__ (p,q), AR coefficients, MA coefficients, alpha __)__ we generate one instance of "the Process";
     - we don't care about any other assumptions / limitations.
 >
 2. _Correlation Functions:_
@@ -20,4 +20,5 @@ __CONCLUSION__
 
 _In the configurations used_
 
-there is evidence to feed MLP Classifier with ACF and PACF data to estimate the orders of ARMA model. There is no reason to build MLP Classifier upon raw Time Series data.
+   - there is evidence to use MLP Classifier with ACF and PACF data to produce only _tentative_ estimates of the orders of ARMA model;
+   - there is no reason to build MLP Classifier upon raw Time Series data even for this kind of estimates.
